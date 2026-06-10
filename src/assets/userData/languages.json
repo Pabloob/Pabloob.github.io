@@ -1,0 +1,11 @@
+{
+  "languages": [
+    {"name":"Java"},
+    {"name":"Spring"},
+    { "name": "JavaScript"},
+    { "name": "React" },
+    { "name": "MySql"},
+    { "name": "MongoDB"},
+    { "name": "Git"}
+  ]
+}

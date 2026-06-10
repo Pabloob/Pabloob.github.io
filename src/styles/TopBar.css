@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.top-bar {
+  width: 100%;
+  padding: 20px 30px;
+  background-color: var(--bg-card);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.top-bar-logo {
+  color: var(--text-main);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-main);
+}
+
+.top-bar-switch {
+  background-color: var(--bg-input);
+  border-radius: 20px;
+  height: 40px;
+  width: 80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.top-bar-handle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;  
+  -webkit-user-select: none;
+}
+
+.top-bar-switch.dark .top-bar-handle {
+  left: calc(100% - 28px - 6px);
+}
+
+.top-bar-switch.light .top-bar-handle {
+  left: 6px;
+}
